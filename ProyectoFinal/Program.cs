@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal
 {
-    internal static class Program
+    static class Program
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,7 +16,7 @@ namespace ProyectoFinal
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormBase());
+            Application.Run(new FrmProducto());
         }
     }
 }

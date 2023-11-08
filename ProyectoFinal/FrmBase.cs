@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal
 {
-    public partial class FormBase : Form
+    public partial class FrmBase : Form
     {
-        public FormBase()
+        public FrmBase()
         {
             InitializeComponent();
+        }
+
+        private void FrmBase_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
