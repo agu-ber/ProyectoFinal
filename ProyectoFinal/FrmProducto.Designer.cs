@@ -62,7 +62,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Producto";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // txtIdProducto
             // 
@@ -70,7 +69,6 @@
             this.txtIdProducto.Name = "txtIdProducto";
             this.txtIdProducto.Size = new System.Drawing.Size(30, 22);
             this.txtIdProducto.TabIndex = 10;
-            this.txtIdProducto.TextChanged += new System.EventHandler(this.txtIdProducto_TextChanged);
             // 
             // btnLimpiar
             // 
@@ -128,7 +126,6 @@
             this.lblStock.Size = new System.Drawing.Size(41, 16);
             this.lblStock.TabIndex = 3;
             this.lblStock.Text = "Stock";
-            this.lblStock.Click += new System.EventHandler(this.label4_Click);
             // 
             // lblPrecio
             // 
@@ -147,7 +144,6 @@
             this.lblCodBarra.Size = new System.Drawing.Size(106, 16);
             this.lblCodBarra.TabIndex = 1;
             this.lblCodBarra.Text = "Código de Barra";
-            this.lblCodBarra.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblNombre
             // 
@@ -157,7 +153,6 @@
             this.lblNombre.Size = new System.Drawing.Size(56, 16);
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre";
-            this.lblNombre.Click += new System.EventHandler(this.label1_Click);
             // 
             // FrmProducto
             // 
