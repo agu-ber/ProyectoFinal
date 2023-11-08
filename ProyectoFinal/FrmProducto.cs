@@ -20,14 +20,15 @@ namespace ProyectoFinal
 
         private void FrmProducto_Load(object sender, EventArgs e)
         {
-            //txtIdProducto.Text = FrmPrincipal.IdProducto;
-            //if (txtIdProducto.Text != "")
-            //{
-            //    Int32 codproducto = Convert.ToInt32(txtIdProducto.Text);
-            //    Producto prod = new Producto();
-            //    DataTable dt = prod.BuscarPorID(idproducto);
-            //    txtNombre.Text = dt.Rows[0]["Nombre"].ToString();
-            //    txtPrecio.Text = dt.Rows[0]["Precio"].ToString();
+            txtIdProducto.Text = FrmPrincipal.idProducto;
+            if (txtIdProducto.Text != "")
+            {
+                Int32 idproducto = Convert.ToInt32(txtIdProducto.Text);
+                Producto prod = new Producto();
+                DataTable dt = prod.BuscarPorID(idproducto);
+                txtNombre.Text = dt.Rows[0]["Nombre"].ToString();
+                txtPrecio.Text = dt.Rows[0]["Precio"].ToString();
+            }
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

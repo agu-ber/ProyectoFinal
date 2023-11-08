@@ -22,7 +22,7 @@ namespace ProyectoFinal.Clases
         public DataTable Buscar(string nombre)
         {
             string sql = "select idproducto, nombre, codbarra, precio, stock ";
-            sql += "from producto where nombre = '" + nombre + "'";
+            sql += "from producto where nombre like '%" + nombre + "%'";
             return Database.Select(sql);
         }
 
